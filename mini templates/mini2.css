@@ -1,0 +1,75 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+}
+.text{
+    margin: 10px;
+    width: 300px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    font-family: sans-serif;
+    border-radius: 10px;
+    letter-spacing: 1.1px;
+}
+.sub{
+    width: fit-content;
+    margin: auto;
+    padding:8px 12px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    background: linear-gradient(#000000a8, rgb(111, 69, 69), #000000b6);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+.text:focus{
+    outline: none;
+}
+.tasks{
+    width: 400px;
+    /* height: 100px; */
+    background-color: #30159078;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+.tasks .task{
+    width: 380px;
+    height: 30px;
+    padding: 4px 8px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #5d674ab0;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.tasks .task:not(:last-child){
+    margin-bottom: 15px;
+}
+.tasks .task.done{
+    opacity: .5;
+}
+.tasks .task span{
+    background-color: #664366;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin:  auto 2px;
+}
